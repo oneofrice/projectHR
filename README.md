@@ -1,6 +1,6 @@
 <a href="https://code.visualstudio.com/docs/python/tutorial-django">установка django в vs code</a>
 <h3>Коротко о содержимом в папке django</h3>
-<h4>Содержимое папки .vend</h4> - системные файлы
+<h4>Содержимое папки .venv</h4> - системные файлы
 Подробнее можно почитать тут(о работе с django и что где хранится) 
 <a href="https://zen.yandex.ru/media/id/5eba7f439f339d116671be06/kak-dobavit-htmlshablon-v-django-5fa8c47fb1fbcf2e235ac874">Туториал<a/>
 <h4>Содержимое папки HR_project</h4>(именно в этой папке в django подключаются шаблоны, т.е. верстка,  например .html-файлы):
