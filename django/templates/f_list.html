@@ -51,8 +51,98 @@
     
     </div>
 
+ <div>
+        <form class="authorizedform" name="DoRegister" method="post">
+            <h2>Регистрация</h2>
 
-    
+            <label>ФИО</label>
+            <input class="authorizedstyle" name="full_name" value="<?php if (isset($key_data['full_name']))echo (htmlspecialchars($key_data['full_name'])) ?>" type="text" placeholder="Ведите свое полное имя" >
+
+            <label>Логин</label>
+            <input class="authorizedstyle" name="login" value="<?php if (isset($key_data['login']))echo (htmlspecialchars($key_data['login'])) ?>" type="text" placeholder="Ведите свой логин" >
+
+            <label>Почта</label>
+            <input class="authorizedstyle" name="email" value="<?php if (isset($key_data['email']))echo (htmlspecialchars($key_data['email'])) ?>" type="email" placeholder="Ведите свой адрес электронной почты">
+
+            <label>Дата рождения</label>
+            <input class="authorizedstyle" name="date" value="<?php if (isset($key_data['name']))echo (htmlspecialchars($key_data['name'])) ?>" type="date" placeholder="Ведите дату рождения">
+
+            <label>Адресс</label>
+            <input class="authorizedstyle" name="adress" value="<?php if (isset($key_data['adress']))echo (htmlspecialchars($key_data['adress'])) ?>" type="text" placeholder="Ведите адрес проживания">
+
+            <label>Пол</label>
+            <input class="authorizedstyle" name="sex" value="<?php if (isset($key_data['sex']))echo (htmlspecialchars($key_data['sex'])) ?>" type="text" placeholder="Введите пол">
+
+            <label>Интересы</label>
+            <input class="authorizedstyle" name="interes" value="<?php if (isset($key_data['interes']))echo (htmlspecialchars($key_data['interes'])) ?>" type="text" placeholder="Ведите свои интересы">
+
+            <label>Ссылка на профиль ВК</label>
+            <input class="authorizedstyle" name="vk" value="<?php if (isset($key_data['vk']))echo (htmlspecialchars($key_data['vk'])) ?>" type="url" placeholder="Ведите ссылку на ВК">
+
+
+                <label  class="form-label">Группа крови</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="blood_group" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1" name="blood_group">
+                        Первая
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="blood_group" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1" name="blood_group">
+                        Вторая
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="blood_group" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault3" name="blood_group">
+                        Третья
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="blood_group" id="flexRadioDefault2"
+                           checked>
+                    <label class="form-check-label" for="flexRadioDefault4">
+                        Четвертая
+                    </label>
+                </div>
+                <label  class="form-label">Резус-фактор</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="rezus" id="flexRadioDefault1"
+                >
+                    <label class="form-check-label" for="flexRadioDefault1">
+                    Положительный
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="rezus" id="flexRadioDefault2"
+                       checked>
+                    <label class="form-check-label" for="flexRadioDefault2">
+                    Отрицательный
+                    </label>
+                </div>
+
+                <label>Резус-фактор</label>
+                <input  name="rezus" type="text" value="<?php if (isset($key_data['rezus']))echo (htmlspecialchars($key_data['rezus'])) ?>" placeholder="Введите резус-фактор">
+
+            <label>Пароль</label>
+            <input type="password" name="password" value="<?php if (isset($key_data['password']))echo (htmlspecialchars($key_data['password'])) ?>" type="password" placeholder="Введите пароль">
+
+            <label>Подтверждение пароля</label>
+            <input type="password" name="password_repeat" value="<?php if (isset($key_data['password_repeat']))echo (htmlspecialchars($key_data['password_repeat'])) ?>" placeholder="Подтвердите введенный пароль">
+
+            <button class="authorizedbutton" name="do_register" type="submit">Зарегистрироваться</button>
+            <p>
+                Уже зарегистрированы? - <a href="login.php">Войдите в аккаунт</a>.
+            </p>
+
+            
+
+
+        </form>
+
+    </div>
+
 <!-- body part of web page -->
 <div class="main" style="margin-top: 50px; ">
     <div class="container">
