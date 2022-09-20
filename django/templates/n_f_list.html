@@ -15,35 +15,15 @@
     <div class="container">
 
       <div class="row" style=" margin-top: 15px; margin-bottom: 15px;">
-        <div class="col-6 text-white">
+        <div class="col-10 text-white">
           <strong> 
             <h4>HR-project</h4>
           </strong>
         </div>
         <div class="col text-white">
-          О нас
-        </div>
-        <div class="col text-white">
-          Помощь
-        </div>
-        <div class="col-4 text-white">
-          Контактная информация
+          About
         </div>
       </div>
-        <!-- <ul class="nav justify-content-center" >
-            <li class="nav-item ">
-                <a class="nav-link" >HR-project</a>
-
-            </li>
-
-            <li class="nav-item location_menu" ><a class="nav-link btncity" href="#">О нас</a></li>
-
-              
-
-              <li class="nav-item location_ur_faces"><a class="nav-link btncity" href="#">Помощь</a></li>
-
-              <li class="nav-item location_dns"><a class="nav-link btncity" href="#">Контактная информация</a></li>
-          </ul> -->
       </div>
     </nav>
   </div>
@@ -65,7 +45,47 @@
             </div>
         </div>
     </div>
-      
+
+
+      <!--     Button trigger modal -->
+      <button style="margin-bottom: 25px;" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+        Добавить данные
+      </button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="formGroupExampleInput">Full name</label>
+                  <input type="text" name="full_name" class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder">
+                </div>
+                <div class="form-group">
+                  <label for="formGroupExampleInput2">Vacancy</label>
+                  <input type="text" name="vacancy" class="form-control" id="formGroupExampleInput1" placeholder="Another input placeholder">
+                </div>
+                <div class="form-group">
+                  <label for="formGroupExampleInput2">Info</label>
+                  <input type="text" name="info" class="form-control" id="formGroupExampleInput2" placeholder="Another input placeholder">
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+              <button type="button" class="btn btn-primary">Add</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="row">
         <div class="col">
           <div class=" multi-collapse" id="multiCollapseExample1">
@@ -75,9 +95,9 @@
               <table class="table table-striped" style="margin-top: 100px;">
                 <thead>
                   <tr>
-                    <th scope="col">ФИО</th>
-                    <th scope="col">Вакансия</th>
-                    <th scope="col">Информация</th>
+                    <th scope="col">Full name</th>
+                    <th scope="col">Vacancy</th>
+                    <th scope="col">Info</th>
                   </tr>
                 </thead>
                 <tbody>

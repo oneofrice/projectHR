@@ -1,3 +1,4 @@
+<!--https://getbootstrap.ru/docs/4.4/components/modal/-->
 <!doctype html>
 <html lang="ru">
   <head>
@@ -12,135 +13,23 @@
     <div class="header">
       <div class="lang-navbar btnhigh btncity">
         <nav class="nav bg-dark">
-        <div class="container">
-    
-          <div class="row" style=" margin-top: 15px; margin-bottom: 15px;">
-            <div class="col-6 text-white">
-              <strong> 
-                <h4>HR-project</h4>
-              </strong>
+            <div class="container">
+
+              <div class="row" style=" margin-top: 15px; margin-bottom: 15px;">
+                <div class="col-10s text-white">
+                  <strong>
+                    <h4>HR-project</h4>
+                  </strong>
+                </div>
+                <div class="col text-white">
+                  About
+                </div>
+              </div>
             </div>
-            <div class="col text-white">
-              About 
-            </div>
-            <div class="col text-white">
-              Help
-            </div>
-            <div class="col-4 text-white">
-              Contact data
-            </div>
-          </div>
-            <!-- <ul class="nav justify-content-center" >
-                <li class="nav-item ">
-                    <a class="nav-link" >HR-project</a>
-    
-                </li>
-    
-                <li class="nav-item location_menu" ><a class="nav-link btncity" href="#">О нас</a></li>
-    
-                  
-    
-                  <li class="nav-item location_ur_faces"><a class="nav-link btncity" href="#">Помощь</a></li>
-    
-                  <li class="nav-item location_dns"><a class="nav-link btncity" href="#">Контактная информация</a></li>
-              </ul> -->
-          </div>
         </nav>
       </div>
     
     
-    </div>
-
- <div>
-        <form class="authorizedform" name="DoRegister" method="post">
-            <h2>Регистрация</h2>
-
-            <label>ФИО</label>
-            <input class="authorizedstyle" name="full_name" value="<?php if (isset($key_data['full_name']))echo (htmlspecialchars($key_data['full_name'])) ?>" type="text" placeholder="Ведите свое полное имя" >
-
-            <label>Логин</label>
-            <input class="authorizedstyle" name="login" value="<?php if (isset($key_data['login']))echo (htmlspecialchars($key_data['login'])) ?>" type="text" placeholder="Ведите свой логин" >
-
-            <label>Почта</label>
-            <input class="authorizedstyle" name="email" value="<?php if (isset($key_data['email']))echo (htmlspecialchars($key_data['email'])) ?>" type="email" placeholder="Ведите свой адрес электронной почты">
-
-            <label>Дата рождения</label>
-            <input class="authorizedstyle" name="date" value="<?php if (isset($key_data['name']))echo (htmlspecialchars($key_data['name'])) ?>" type="date" placeholder="Ведите дату рождения">
-
-            <label>Адресс</label>
-            <input class="authorizedstyle" name="adress" value="<?php if (isset($key_data['adress']))echo (htmlspecialchars($key_data['adress'])) ?>" type="text" placeholder="Ведите адрес проживания">
-
-            <label>Пол</label>
-            <input class="authorizedstyle" name="sex" value="<?php if (isset($key_data['sex']))echo (htmlspecialchars($key_data['sex'])) ?>" type="text" placeholder="Введите пол">
-
-            <label>Интересы</label>
-            <input class="authorizedstyle" name="interes" value="<?php if (isset($key_data['interes']))echo (htmlspecialchars($key_data['interes'])) ?>" type="text" placeholder="Ведите свои интересы">
-
-            <label>Ссылка на профиль ВК</label>
-            <input class="authorizedstyle" name="vk" value="<?php if (isset($key_data['vk']))echo (htmlspecialchars($key_data['vk'])) ?>" type="url" placeholder="Ведите ссылку на ВК">
-
-
-                <label  class="form-label">Группа крови</label>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="blood_group" id="flexRadioDefault1">
-                    <label class="form-check-label" for="flexRadioDefault1" name="blood_group">
-                        Первая
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="blood_group" id="flexRadioDefault1">
-                    <label class="form-check-label" for="flexRadioDefault1" name="blood_group">
-                        Вторая
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="blood_group" id="flexRadioDefault1">
-                    <label class="form-check-label" for="flexRadioDefault3" name="blood_group">
-                        Третья
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="blood_group" id="flexRadioDefault2"
-                           checked>
-                    <label class="form-check-label" for="flexRadioDefault4">
-                        Четвертая
-                    </label>
-                </div>
-                <label  class="form-label">Резус-фактор</label>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="rezus" id="flexRadioDefault1"
-                >
-                    <label class="form-check-label" for="flexRadioDefault1">
-                    Положительный
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="rezus" id="flexRadioDefault2"
-                       checked>
-                    <label class="form-check-label" for="flexRadioDefault2">
-                    Отрицательный
-                    </label>
-                </div>
-
-                <label>Резус-фактор</label>
-                <input  name="rezus" type="text" value="<?php if (isset($key_data['rezus']))echo (htmlspecialchars($key_data['rezus'])) ?>" placeholder="Введите резус-фактор">
-
-            <label>Пароль</label>
-            <input type="password" name="password" value="<?php if (isset($key_data['password']))echo (htmlspecialchars($key_data['password'])) ?>" type="password" placeholder="Введите пароль">
-
-            <label>Подтверждение пароля</label>
-            <input type="password" name="password_repeat" value="<?php if (isset($key_data['password_repeat']))echo (htmlspecialchars($key_data['password_repeat'])) ?>" placeholder="Подтвердите введенный пароль">
-
-            <button class="authorizedbutton" name="do_register" type="submit">Зарегистрироваться</button>
-            <p>
-                Уже зарегистрированы? - <a href="login.php">Войдите в аккаунт</a>.
-            </p>
-
-            
-
-
-        </form>
-
     </div>
 
 <!-- body part of web page -->
@@ -159,11 +48,52 @@
         </div>
       
     </div>
-    <form>
-      <button style="margin-top:20px;" class="btn btn-primary" type="submit" formaction="n_f_list.html">Перейти</button>
-    </form>
-  
-      <div class="row">
+
+<!--     Button trigger modal -->
+        <button style="margin-bottom: 25px;" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+            Добавить данные
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="formGroupExampleInput">Full name</label>
+                                <input type="text" name="full_name" class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder">
+                            </div>
+                            <div class="form-group">
+                                <label for="formGroupExampleInput2">Vacancy</label>
+                                <input type="text" name="vacancy" class="form-control" id="formGroupExampleInput1" placeholder="Another input placeholder">
+                            </div>
+                            <div class="form-group">
+                                <label for="formGroupExampleInput2">Info</label>
+                                <input type="text" name="info" class="form-control" id="formGroupExampleInput2" placeholder="Another input placeholder">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-primary">Add</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <div class="row">
         <div class="col">
           <div class=" multi-collapse" id="multiCollapseExample1">
             <div class="card card-body" style="width: 50rem;">
@@ -172,9 +102,9 @@
               <table class="table table-striped" style="margin-top: 100px;">
                 <thead>
                   <tr>
-                    <th scope="col">ФИО</th>
-                    <th scope="col">Вакансия</th>
-                    <th scope="col">Информация</th>
+                    <th scope="col">Full name</th>
+                    <th scope="col">Vacancy</th>
+                    <th scope="col">Info</th>
                   </tr>
                 </thead>
                 <tbody>
