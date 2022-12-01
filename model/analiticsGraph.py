@@ -43,3 +43,29 @@ def showHeatMap(sns, df, plt):
     sns.heatmap(df.corr(), annot=True)
     fig.tight_layout()
     plt.show()
+    
+    
+def optimizingAfterBoxplot(data):
+    # Q1 = data['training_hours'].quantile(0.25)
+    # Q3 = data['training_hours'].quantile(0.75)
+    # data_IQR = data[(data['training_hours'] > Q1) & (data['training_hours'] < Q3)]
+    # data = data_IQR.copy()
+
+    # Q1 = data['city'].quantile(0.25)
+    # Q3 = data['city'].quantile(0.75)
+    # data_IQR = data[(data['city'] > Q1) & (data['city'] < Q3)]
+    # data = data_IQR.copy()
+
+    # Q1 = data['city'].quantile(0.25)
+    # Q3 = data['city'].quantile(0.75)
+    # data_IQR = data[(data['city'] > Q1) & (data['city'] < Q3)]
+    # data = data_IQR.copy()
+    
+    Q1 = data['city_development_index'].quantile(0.25)
+    Q3 = data['city_development_index'].quantile(0.75)
+    data_IQR = data[(data['city_development_index'] > Q1) & (data['city_development_index'] < Q3)]
+    data = data_IQR.copy()
+    
+    
+    
+    return data_IQR
