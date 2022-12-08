@@ -9,7 +9,7 @@ class DataController extends Controller
 {
     public $check_array = array();
 
-    public function getData()
+    public function postData()
     {
         $array['city'] = $_GET['city'];
         $array['enrollment'] = $_GET['enrollment'];
@@ -19,15 +19,12 @@ class DataController extends Controller
         $array['company_t'] = $_GET['company_t'];
         $array['company_s'] = $_GET['company_s'];
         $array['last_job'] = $_GET['last_job'];
+        $array['gender'] = $_GET['gender'];
+        $array['exp'] = $_GET['exp'];
+
+        $new_array = json_encode($array);
+        return $new_array;
+    }
 
 
-        foreach ($array as $ar)
-        {
-            $check_array[$ar] = $array[$ar];
-        }
-        return $check_array;
-    }
-    public function createCSV(){
-        getData();
-    }
 }

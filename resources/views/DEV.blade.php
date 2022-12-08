@@ -1,15 +1,20 @@
 <?php
 ?>
-<!DOCTYPE html>
+
+    <!DOCTYPE html>
 <html lang="ru">
 <!-- добавляем русский язык -->
 <meta charset="utf-8">
 <head>
-    <link href="{{ asset('css/styles.css') }}" rel="stylesheet" >
+    <link href="{{ asset('/css/styles.css') }}" rel="stylesheet" >
     <script src="script.js"></script>
     <title>HR PROJECT</title>
-    <!-- подключаем фреймворк -->
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+
+    {{--    подключение jquery  --}}
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 </head>
 <body>
 <!-- создаём блок, к которому будет привязано приложение -->
@@ -274,7 +279,48 @@
         </div>
     </form>
 </div>
-<!-- начинаем писать на Vue.js -->
+
+<!-- отправка данных в php -->
+<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+{{-- ajax запрос к php с помощью jquery--}}
+<script>
+
+$('#dataForm').on('submit',function(event){
+        event.preventDefault();
+
+        let city = $('#city').val();
+        let enrollment = $('#enrollment').val();
+        let edu_level = $('#edu_level').val();
+        let experience = $('#experience').val();
+        let company_t = $('#company_t').val();
+        let company_s = $('#company_s').val();
+        let last_job = $('#last_job').val();
+        let gender = $('#gender').val();
+        let exp = $('#exp').val();
+0
+        $.ajax({
+            url: "/dev",
+            type:"POST",
+            data:{
+                {{--"_token": "{{ csrf_token() }}",--}}
+                city:city,
+                enrollment:enrollment,
+                edu_level:edu_level,
+                major:major,
+                experience:experience,
+                company_t:company_t,
+                company_s:company_s,
+                last_job:last_job,
+                gender:gender,
+                exp:exp,
+            },
+            success:function(response){
+                console.log(response);
+            },
+        });
+    });
+
+</script>
 
 </body>
 </html>

@@ -21,8 +21,14 @@ Route::get('/dev', function () {
     return view('DEV');
 });
 
+Route::resource('/dev', 'DataController', ['only' => ['postData']]);
+
 
 Route::get('/', function () {
     return redirect('/dev');
+});
+
+Route::get('/result', function () {
+    return view('RESULT');
 });
 
