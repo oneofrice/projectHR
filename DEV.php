@@ -1,5 +1,6 @@
 <?php
 //include "logic.php";
+
 //?>
 <!DOCTYPE html>
 <html lang="ru">
@@ -35,11 +36,11 @@
         </div>
     </div>
 
-    <form id="dataForm" method="POST" action="DEV.php" class="ajax">
+    <form id="dataForm" method="post" action="DEV.php" class="ajax">
         <div class="block-right fo1 signupform">
             <div class="label">Select a city from the list</div>
             <i class="list"></i>
-            <select name="city" class="val select">
+            <select name="city" id="city" class="val select">
                 <option disabled selected>Select from list</option>
                 <option>city_103</option>
                 <option>city_40</option>
@@ -167,7 +168,7 @@
             </select>
                 <div class="label">Select a enrollment from the list</div>
                 <i class="list"></i>
-                <select name="enrollment" class="val select">
+                <select name="enrollment" id="enrollment" class="val select">
                     <option disabled selected>Select from list</option>
                     <option>no_enrollment</option>
                     <option>Full time course</option>
@@ -175,7 +176,7 @@
                 </select>
                 <div class="label">Select a edu_level from the list</div>
                 <i class="list"></i>
-                <select name="edu_level" class="val select">
+                <select name="edu_level" id="edu_level" class="val select">
                     <option disabled selected>Select from list</option>
                     <option>Graduate</option>
                     <option>Masters</option>
@@ -185,7 +186,7 @@
                 </select>
                 <div class="label">Select a major from the list</div>
                 <i class="list"></i>
-                <select name="major" class="val select">
+                <select name="major" id="major" class="val select">
                     <option disabled selected>Select from list</option>
                     <option>STEM</option>
                     <option>Business Degree</option>
@@ -196,7 +197,7 @@
                 </select>
                 <div class="label">Select a experience from the list</div>
                 <i class="list"></i>
-                <select name="experience" class="val select">
+                <select name="experience" id="experience" class="val select">
                     <option disabled selected>Select from list</option>
                     <option><1</option>
                     <option>1</option>
@@ -223,7 +224,7 @@
                 </select>
                 <div class="label">Select a company_t from the list</div>
                 <i class="list"></i>
-                <select name="company_t" class="val select">
+                <select name="company_t" id="company_t" class="val select">
                     <option disabled selected>Select from list</option>
                     <option>Pvt Ltd</option>
                     <option>Funded Startup</option>
@@ -234,7 +235,7 @@
                 </select>
                 <div class="label">Select a company_s from the list</div>
                 <i class="list"></i>
-                <select name="company_s" class="val select">
+                <select name="company_s" id="company_s" class="val select">
                     <option disabled selected>Select from list</option>
                     <option><10</option>
                     <option>10-49</option>
@@ -247,7 +248,7 @@
                 </select>
                 <div class="label">Select a last_job from the list</div>
                 <i class="list"></i>
-                <select name="last_job" class="val select">
+                <select name="last_job" class="val select" id="last_job">
                     <option disabled selected>Select from list</option>
                     <option>never</option>
                     <option>1</option>
@@ -258,22 +259,22 @@
                 </select>
             <div class="label">Select a gender</div>
             <div class="check">
-                <input name="checkbox" type="checkbox">
+                <input name="checkbox" id="checkbox" type="checkbox">
                 <label>Female</label>
-                <input name="checkbox" type="checkbox">
+                <input name="checkbox" id="checkbox" type="checkbox">
                 <label>Male</label>
-                <input name="checkbox" type="checkbox">
+                <input name="checkbox" id="checkbox" type="checkbox">
                 <label>Other</label>
             </div>
             <div class="label">Select a rel_experience</div>
             <div class="check">
-                <input name="checkbox" type="checkbox">
+                <input name="checkbox" id="checkbox" type="checkbox">
                 <label>Has relevent experience</label>
-                <input name="checkbox" type="checkbox">
+                <input name="checkbox" id="checkbox" type="checkbox">
                 <label>No relevent experience</label>
             </div>
             <div>
-                <button class="but btn" type="button" name="submit_btn">Send
+                <button class="but btn" type="button" id="submit_btn" name="submit_btn">Send
                     <img src="images/Vector.png"></button>
             </div>
         </div>
@@ -281,31 +282,20 @@
 </div>
 <!-- начинаем писать на Vue.js -->
 
-<script>
+<script>/*
 $(document).ready(function (){
     $('button').click(function(e){
         e.preventDefault();
 
-/*
-        $.ajaxSetup({
-            xhrFields: { withCredentials: true },
-            headers: {
-
-                "Accept": "https://google.com/",
-                "Access-Control-Allow-Origin": "https://google.com/",
-            }
-        });
-*/
         $.ajax({
-            method: 'POST',
-            url: 'https://google.com/',
+            method: 'GET',
+            url: 'https://a7d6-176-59-34-113.eu.ngrok.io',
             xhrFields: { withCredentials: true },
              headers: {
-                 "Accept": "https://google.com/",
-                 "Access-Control-Allow-Origin": "https://google.com/",
+                 "Accept": "https://a7d6-176-59-34-113.eu.ngrok.io",
+                 "Access-Control-Allow-Origin": "https://a7d6-176-59-34-113.eu.ngrok.io",
              },
             dataType: 'jsonp',
-            timeout: 15000, // adjust the limit. currently its 15 seconds
             data:{
                 "token": "{{ csrf_token() }}",
                 "city": $('city').val(),
@@ -325,6 +315,39 @@ $(document).ready(function (){
             },
             error: function(er) {
                 console.log(er);
+            }
+        });
+    })
+});
+*/
+$(document).ready(function () {
+    $('button').click(function (e) {
+        e.preventDefault();
+        $.ajax({
+            url: 'https://e25f-94-233-88-155.eu.ngrok.io',
+            /* Куда пойдет запрос */
+            method: 'post',             /* Метод передачи (post или get) */
+            contentType: 'application/json',
+            dataType:'json',
+            responseType:'application/json',
+            headers: { "Access-Control-Allow-Origin: https://e25f-94-233-88-155.eu.ngrok.io" },
+            data: {
+                "token": "{{ csrf_token() }}",
+                "city": $('city').val(),
+                "enrollment": $('enrollment').val(),
+                "edu_level": $('edu_level').val(),
+                "major": $('major').val(),
+                "experience": $('experience').val(),
+                "company_t": $('company_t').val(),
+                "company_s": $('company_s').val(),
+                "last_job": $('last_job').val(),
+                "gender": $('gender').val(),
+                "exp": $('exp').val()
+            },
+            /* Параметры передаваемые в запросе. */
+            success: function (data) {   /* функция которая будет выполнена после успешного запроса.  */
+                alert(data);
+                console.log(data);/* В переменной data содержится ответ от index.php. */
             }
         });
     })
