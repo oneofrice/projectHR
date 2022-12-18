@@ -1,0 +1,521 @@
+.btn-group button {
+    border: none;
+    background: Snow;
+
+    width: 269px;
+    height: 55px;
+    left: 564px;
+    top: 54px;
+
+    font-family: 'Barlow';
+    font-style: italic;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #09418B;
+    padding: 10px 24px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    float: left; /* Float the buttons side by side */
+}
+
+
+/* Add a background color on hover */
+.btn-group button:hover {
+    border-bottom: 2px solid #2E5C9A;
+}
+.b2{
+    position: absolute;
+
+    padding: 10px 24px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    float: left; /* Float the buttons side by side */
+
+    width: 265px;
+    height: 80.52px;
+    left: 146px;
+    top: 687px;
+
+    font-family: 'Barlow';
+    font-style: italic;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+
+    background: #2E5C9A;
+    border-radius: 30.7459px;
+    border: none;
+}
+.b2:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    border: 2px solid black;
+}
+.im{
+    color: #CBE5FF;
+}
+.sh{
+    position: absolute;
+    width: 648px;
+    height: 231.98px;
+    left: 132px;
+    top: 276px;
+
+    font-family: 'Barlow';
+    font-style: italic;
+    font-weight: 900;
+    font-size: 105.048px;
+    line-height: 126px;
+
+    color: #2E5C9A;
+
+}
+.sh1{
+    position: absolute;
+    width: 615.19px;
+    height: 196px;
+    left: 146px;
+    top: 445px;
+
+    font-family: 'Barlow';
+    font-style: italic;
+    font-weight: 500;
+    font-size: 36.2543px;
+    line-height: 44px;
+
+    color: #2E5C99;
+}
+
+.sh2{
+    position: absolute;
+    width: 615.19px;
+    height: 196px;
+    left: 122px;
+    top: 250px;
+
+    font-family: 'Barlow';
+    font-style: italic;
+    font-weight: 500;
+    font-size: 36.2543px;
+    line-height: 44px;
+    color: #2E5C99;
+}
+.perenos {
+    padding:10px;
+    width: 700px;
+    float:left;
+}
+
+.block-left{width:50%;height:800px;float:left;}
+.block-right{width:50%;height:800px;}
+.page-wrapper {
+    text-align: justify;
+    overflow: hidden;
+    min-width: 1000px;
+}
+.page-wrapper:after {
+    content: '';
+    width: 100%;
+    display: inline-block;
+}
+.left-panel-wrapper {
+    display: inline-block;
+    margin-top: 20%;
+    width: 200px;
+    vertical-align: top;
+}
+
+.right-panel-wrapper {
+    display: inline-block;
+    margin-top: 20%;
+    width: 200px;
+    vertical-align: top;
+}
+
+.content-wrapper {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 20%;
+    width: 500px;
+    padding: 0 10px;
+}
+
+/* костыль */
+.left-panel-wrapper,
+.right-panel-wrapper,
+.content-wrapper {
+    position: relative;
+}
+.left-panel-wrapper:before,
+.right-panel-wrapper:before,
+.content-wrapper:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 9000px;
+    z-index: -1;
+}
+.fo{
+    position: absolute;
+    width: 800px;
+    height: 650px;
+    left: 800px;
+    top: 200px;
+}
+
+.fo1{
+    position: absolute;
+    width: 800px;
+    height: 650px;
+    left: 880px;
+    top: 100px;
+}
+
+.im2{
+    position: absolute;
+    width: 841px;
+    height: 500px;
+    left: 79px;
+    top: 550.6px;
+}
+.signupform{
+    /* signupForm */
+
+
+    /* Auto layout */
+
+    display: inline-block;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 180px;
+    gap: 24.59px;
+
+    width: 580px;
+    height: 680.65px;
+
+    background: #FFFFFF;
+    border-radius: 5.12284px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+}
+
+.label{
+    /* label */
+
+
+    width: 531.66px;
+    height: 23px;
+    padding-top: 25px;
+    padding-left: 10px;
+    /* Source/14 */
+
+    font-family: 'Source Code Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    /* or 114% */
+
+
+    /* Text/Grey */
+
+    color: #878787;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+}
+.ulabel{
+    /* label */
+
+
+    width: 531.66px;
+    height: 20px;
+    padding-top: 10px;
+    padding-left: 10px;
+    font-family: 'Source Code Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16.5282px;
+    line-height: 19px;
+    /* identical to box height, or 117% */
+
+
+    color: #2E5C99;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+}
+.input{
+    /* input */
+
+    position: relative;
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12.19655px 30.5896px;
+
+    width: 553.7px;
+    height: 55.09px;
+
+    background: #CBE5FF;
+    border: none;
+    /* Inside auto layout */
+    border-radius: 6.89px; /*Закругляем уголки*/
+
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+
+}
+input {
+    height: 20px;
+}
+
+i.type {
+    width: 50px;
+    height: 46.1px;
+    line-height: 26px;
+    text-align: center;
+    margin-right: -56px;
+    position: relative;
+    z-index: 1;
+    float: left;
+    border-radius: 6.89px 0 0 6.89px;
+    border-right: 2px solid #0F4287;
+    background: #bdddfc;
+    background-image: url(images/type.png);
+    background-repeat: no-repeat; /*Убираем повтор изображения*/
+    background-position: center; /*Позиционируем*/
+}
+
+i.type + input {
+    padding-left: 55px;
+}
+i.mail {
+    width: 50px;
+    height: 46px;
+    line-height: 26px;
+    text-align: center;
+    margin-right: -56px;
+    position: relative;
+    z-index: 1;
+    float: left;
+    border-radius: 6.89px 0 0 6.89px;
+    border-right: 2px solid #0F4287;
+    background: #bdddfc;
+    background-image: url(images/mail.png);
+    background-repeat: no-repeat; /*Убираем повтор изображения*/
+    background-position: center; /*Позиционируем*/
+}
+i.mail + input {
+    padding-left: 55px;
+}
+i.key {
+    width: 50px;
+    height: 47px;
+    line-height: 26px;
+    text-align: center;
+    margin-right: -56px;
+    position: relative;
+    z-index: 1;
+    float: left;
+    border-radius: 6.89px 0 0 6.89px;
+    border-right: 2px solid #0F4287;
+    background: #bdddfc;
+    background-image: url(images/key.png);
+    background-repeat: no-repeat; /*Убираем повтор изображения*/
+    background-position: center; /*Позиционируем*/
+}
+i.key + input {
+    padding-left:55px;
+}
+i.list {
+    width: 50px;
+    height: 55px;
+    line-height: 26px;
+    text-align: center;
+    margin-right: -56px;
+    position: relative;
+    z-index: 1;
+    float: left;
+    border-radius: 6.89px 0 0 6.89px;
+    border-right: 2px solid #0F4287;
+    background: #bdddfc;
+    background-image: url(images/list.png);
+    background-repeat: no-repeat; /*Убираем повтор изображения*/
+    background-position: center; /*Позиционируем*/
+}
+i.list + select {
+    padding-left: 55px;
+}
+.val{
+    /* label */
+
+
+    width: 477.41px;
+    height: 22px;
+    /* Source/14 */
+
+    font-family: 'Source Code Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    /* or 114% */
+
+    color: #09418B;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 1;
+}
+.check{
+    /* Checkbox option select */
+
+    width: 836.05px;
+    height: 18px;
+    padding-top: 20px;
+    padding-bottom: 25px;
+    /* Source/14 */
+
+    font-family: 'Source Code Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    /* or 114% */
+
+    color: #09418B;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.but{
+    /* button */
+
+
+    /* Auto layout */
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 9.22px;
+    padding: 10.19655px 24.5896px;
+
+    width: 100px;
+    height: 40px;
+
+    background: #A5D2FF;
+    border: none;
+    border-radius: 6.89px; /*Закругляем уголки*/
+    /* Inside auto layout */
+
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+.but:hover {
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.24), 0 13px 26px 0 rgba(0,0,0,0.19);
+    border: 1px solid #0F4287;
+}
+.select{
+    /* input */
+
+
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 2.19655px 50.5896px;
+
+    width: 562.7px;
+    height: 55.09px;
+
+    background: #CBE5FF;
+    border: none;
+    font-size: 14.5282px;
+    /* Inside auto layout */
+    border-radius: 6.89px;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+.password {
+    position: relative;
+}
+.password-control {
+    position: absolute;
+    top: 12.5px;
+    right: 40px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(images/view.svg) 0 0 no-repeat;
+}
+.password-control.view {
+    background: url(images/no-view.svg) 0 0 no-repeat;
+}
+
+.proc{
+    position: absolute;
+    width: 615.19px;
+    height: 196px;
+    left: 223px;
+    top: 435px;
+
+    font-family: 'Barlow';
+    font-style: italic;
+    font-weight: 500;
+    font-size: 128px;
+    line-height: 154px;
+
+    color: #8DBFFF;
+}
+
+.dia{
+    position: absolute;
+    width: 335.74px;
+    height: 347.95px;
+    left: calc(50% - 335.74px/2 - 40.87px);
+    top: calc(50% - 347.95px/2 + 22.98px);
+
+    background: #2E5C9A;
+    border: 1.73977px solid #FFFFFF;
+}
+@media (max-width: 1500px) {
+    .fo1 {
+        position: static;
+        padding-top: 150px;
+    }
+    .fo {
+        position: static;
+        width: 100%;
+    }
+}
