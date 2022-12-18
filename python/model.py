@@ -230,7 +230,7 @@ def predictResult(data):
     # RMSE-среднеквадратическая ошибка
     model = CatBoostRegressor(objective='RMSE')
     # Загружаем модель
-    model.load_model('model')
+    model.load_model('C:/Users//anton/Desktop/Study/projectHR/python/model')
     
     
     df = pd.json_normalize(data)
@@ -253,8 +253,8 @@ def predictResult(data):
    
     
     result = model.predict(predictData)
-    
-    return print(result)
+    res = type(result)
+    return str(result[0])
 
 
 
