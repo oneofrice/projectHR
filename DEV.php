@@ -301,6 +301,19 @@ $(document).ready(function () {
                 city: "a",
                 format: "json"
             },
+            data: {
+                token: "{{ csrf_token() }}",
+                city: $('city').val(),
+                enrollment: $('enrollment').val(),
+                edu_level: $('edu_level').val(),
+                major: $('major').val(),
+                experience: $('experience').val(),
+                company_t: $('company_t').val(),
+                company_s: $('company_s').val(),
+                last_job: $('last_job').val(),
+                gender: $('gender').val(),
+                exp: $('exp').val()
+            },
             /* Параметры передаваемые в запросе. */
             success: function (data) {   /* функция которая будет выполнена после успешного запроса.  */
                 alert("success");
