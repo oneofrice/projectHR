@@ -282,72 +282,32 @@
 </div>
 <!-- начинаем писать на Vue.js -->
 
-<script>/*
-$(document).ready(function (){
-    $('button').click(function(e){
-        e.preventDefault();
+<script>
 
-        $.ajax({
-            method: 'GET',
-            url: 'https://a7d6-176-59-34-113.eu.ngrok.io',
-            xhrFields: { withCredentials: true },
-             headers: {
-                 "Accept": "https://a7d6-176-59-34-113.eu.ngrok.io",
-                 "Access-Control-Allow-Origin": "https://a7d6-176-59-34-113.eu.ngrok.io",
-             },
-            dataType: 'jsonp',
-            data:{
-                "token": "{{ csrf_token() }}",
-                "city": $('city').val(),
-                "enrollment":$('enrollment').val(),
-                "edu_level":$('edu_level').val(),
-                "major":$('major').val(),
-                "experience":$('experience').val(),
-                "company_t":$('company_t').val(),
-                "company_s":$('company_s').val(),
-                "last_job":$('last_job').val(),
-                "gender":$('gender').val(),
-                "exp":$('exp').val()
-            },
-            success:function(response){
-
-                console.log(response);
-            },
-            error: function(er) {
-                console.log(er);
-            }
-        });
-    })
-});
-*/
 $(document).ready(function () {
     $('button').click(function (e) {
         e.preventDefault();
         $.ajax({
             url: 'https://e25f-94-233-88-155.eu.ngrok.io',
-            /* Куда пойдет запрос */
-            method: 'post',             /* Метод передачи (post или get) */
-            contentType: 'application/json',
-            dataType:'json',
-            responseType:'application/json',
-            headers: { "Access-Control-Allow-Origin: https://e25f-94-233-88-155.eu.ngrok.io" },
+            type:"GET",
+            dataType: 'jsonp',
+            CORS: true ,
+            contentType:'application/json',
+            secure: true,
+            headers: {
+                'Access-Control-Allow-Origin': 'https://e25f-94-233-88-155.eu.ngrok.io',
+            },
             data: {
-                "token": "{{ csrf_token() }}",
-                "city": $('city').val(),
-                "enrollment": $('enrollment').val(),
-                "edu_level": $('edu_level').val(),
-                "major": $('major').val(),
-                "experience": $('experience').val(),
-                "company_t": $('company_t').val(),
-                "company_s": $('company_s').val(),
-                "last_job": $('last_job').val(),
-                "gender": $('gender').val(),
-                "exp": $('exp').val()
+                city: "a",
+                format: "json"
             },
             /* Параметры передаваемые в запросе. */
             success: function (data) {   /* функция которая будет выполнена после успешного запроса.  */
-                alert(data);
+                alert("success");
                 console.log(data);/* В переменной data содержится ответ от index.php. */
+            },
+            error: function (data) {
+                alert("error");
             }
         });
     })
