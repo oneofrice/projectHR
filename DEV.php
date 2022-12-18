@@ -259,18 +259,18 @@
                 </select>
             <div class="label">Select a gender</div>
             <div class="check">
-                <input name="checkbox" id="checkbox" type="checkbox">
+                <input name="checkbox" id="gender" type="checkbox" value="Female">
                 <label>Female</label>
-                <input name="checkbox" id="checkbox" type="checkbox">
+                <input name="checkbox" id="gender" type="checkbox" value="Male">
                 <label>Male</label>
-                <input name="checkbox" id="checkbox" type="checkbox">
+                <input name="checkbox" id="gender" type="checkbox" value="Other">
                 <label>Other</label>
             </div>
             <div class="label">Select a rel_experience</div>
             <div class="check">
-                <input name="checkbox" id="checkbox" type="checkbox">
+                <input name="checkbox" id="rel_experience" type="checkbox" value="Has relevent experience">
                 <label>Has relevent experience</label>
-                <input name="checkbox" id="checkbox" type="checkbox">
+                <input name="checkbox" id="rel_experience" type="checkbox" value="No relevent experience">
                 <label>No relevent experience</label>
             </div>
             <div>
@@ -287,36 +287,30 @@
 $(document).ready(function () {
     $('button').click(function (e) {
         e.preventDefault();
+        let city = $('#city').val();
+        let enrollment = $('#enrollment').val();
+        let major = $('#major').val();
+        let experience = $('#experience').val();
+        let company_t = $('#company_t').val();
+        let company_s = $('#company_s').val();
+        let last_job = $('#last_job').val();
+        let gender = $('#gender').val();
+        let rel_experience = $('#rel_experience').val();
+        let edu_level = $('#edu_level').val();
+        let url = 'https://e25f-94-233-88-155.eu.ngrok.io?city=' + city +'&enrollment=' + enrollment + '&major=' + major + '&experience=' + experience + '&company_t=' + company_t + '&company_s=' + company_s +
+            '&last_job=' + last_job + '&gender=' + gender + '&rel_experience=' + rel_experience + '&edu_level=' + edu_level;
         $.ajax({
-            url: 'https://e25f-94-233-88-155.eu.ngrok.io',
+            url: url,
             type:"GET",
-            dataType: 'jsonp',
-            CORS: true ,
-            contentType:'application/json',
-            secure: true,
             headers: {
                 'Access-Control-Allow-Origin': 'https://e25f-94-233-88-155.eu.ngrok.io',
             },
-            data: {
-                city: "a",
-                format: "json"
-            },
-            data: {
-                token: "{{ csrf_token() }}",
-                city: $('city').val(),
-                enrollment: $('enrollment').val(),
-                edu_level: $('edu_level').val(),
-                major: $('major').val(),
-                experience: $('experience').val(),
-                company_t: $('company_t').val(),
-                company_s: $('company_s').val(),
-                last_job: $('last_job').val(),
-                gender: $('gender').val(),
-                exp: $('exp').val()
-            },
+            dataType: 'jsonp',
+            contentType:'application/json',
+            CORS: true ,
+            crossDomain: true,
             /* Параметры передаваемые в запросе. */
             success: function (data) {   /* функция которая будет выполнена после успешного запроса.  */
-                alert("success");
                 console.log(data);/* В переменной data содержится ответ от index.php. */
             },
             error: function (data) {
@@ -325,6 +319,7 @@ $(document).ready(function () {
         });
     })
 });
+
 
 
 </script>

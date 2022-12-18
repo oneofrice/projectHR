@@ -45,7 +45,7 @@
         $('#load').delay(2500).fadeOut('slow');
     });
 </script>
-{{--библиотека chart.js--}}
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
 <script src="/js/script.js"></script>
 </body>
