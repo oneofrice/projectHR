@@ -2,8 +2,8 @@
 <html lang="ru">
 <!-- добавляем русский язык -->
 <meta charset="utf-8">
-<he <link rel="stylesheet" href="styles.css">
-<script src="script.js"></script>
+<he <link rel="stylesheet" href="../styles.css">
+<script src="js/script.js"></script>
 <title>HR PROJECT</title>
 <!-- подключаем фреймворк -->
 
@@ -30,7 +30,7 @@
 </div>
 <div class="block-right fo">
     <center>
-        <img src="images/1.png">
+        <img src="../images/1.png">
     </center>
 
 </div>

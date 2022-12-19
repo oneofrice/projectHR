@@ -7,8 +7,8 @@
 <!-- добавляем русский язык -->
 <meta charset="utf-8">
 <head>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="../styles.css">
+    <script src="js/script.js"></script>
     <title>HR PROJECT</title>
     <!-- подключаем фреймворк -->
 

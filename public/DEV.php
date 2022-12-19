@@ -7,7 +7,7 @@
 <!-- добавляем русский язык -->
 <meta charset="utf-8">
 <head>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../styles.css">
 <!--    <script src="script.js"></script>-->
     <title>HR PROJECT</title>
     <!-- подключаем фреймворк -->
@@ -31,7 +31,7 @@
             suitable for a particular position.</h1>
         <div class="im2">
             <center>
-                <img src="images/2.png">
+                <img src="../images/2.png">
             </center>
         </div>
     </div>
@@ -275,7 +275,7 @@
             </div>
             <div>
                 <button class="but btn" type="button" id="submit_btn" name="submit_btn">Send
-                    <img src="images/Vector.png"></button>
+                    <img src="../images/Vector.png"></button>
             </div>
         </div>
     </form>

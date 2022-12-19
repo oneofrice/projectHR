@@ -357,7 +357,7 @@ i.list {
     border-radius: 6.89px 0 0 6.89px;
     border-right: 2px solid #0F4287;
     background: #bdddfc;
-    background-image: url(images/list.png);
+    background-image: url(../../images/list.png);
     background-repeat: no-repeat; /*Убираем повтор изображения*/
     background-position: center; /*Позиционируем*/
 }
