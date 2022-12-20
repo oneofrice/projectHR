@@ -112,6 +112,48 @@ $last_job = getLastJob();
     </div>
 </div>
 
+<script>
+
+    $(document).ready(function () {
+        $('button').click(function (e) {
+            e.preventDefault();
+            let city = $('#city').val();
+            let enrollment = $('#enrollment').val();
+            let major = $('#major').val();
+            let experience = $('#experience').val();
+            let company_t = $('#company_t').val();
+            let company_s = $('#company_s').val();
+            let last_job = $('#last_job').val();
+            let gender = $('#gender').val();
+            let rel_experience = $('#rel_experience').val();
+            let edu_level = $('#edu_level').val();
+            let url = 'https://e25f-94-233-88-155.eu.ngrok.io?city=' + city +'&enrollment=' + enrollment + '&major=' + major + '&experience=' + experience + '&company_t=' + company_t + '&company_s=' + company_s +
+                '&last_job=' + last_job + '&gender=' + gender + '&rel_experience=' + rel_experience + '&edu_level=' + edu_level;
+            $.ajax({
+                url: url,
+                type:"GET",
+                headers: {
+                    'Access-Control-Allow-Origin': 'https://e25f-94-233-88-155.eu.ngrok.io',
+                },
+                dataType: 'jsonp',
+                contentType:'application/json',
+                CORS: true ,
+                crossDomain: true,
+                /* Параметры передаваемые в запросе. */
+                success: function (data) {   /* функция которая будет выполнена после успешного запроса.  */
+                    console.log(data);/* В переменной data содержится ответ от index.php. */
+                },
+                error: function (data) {
+                    alert("error");
+                }
+            });
+        })
+    });
+
+
+
+</script>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
 </body>
