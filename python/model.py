@@ -241,11 +241,11 @@ def predictResult(data):
     predictData['city'] = df['city'].apply(city)
     predictData['city_development_index'] = 0.45
     predictData['gender'] = df['gender'].apply(gender_to_numeric)
-    predictData['relevent_experience'] = rel_experience('Has relevent experience')
+    predictData['relevent_experience'] = df['rel_experience'].apply(rel_experience)
     predictData['enrolled_university'] = df['enrollment'].apply(enrollment)
     predictData['education_level'] = df['edu_level'].apply(edu_level)
     predictData['major_discipline'] = df['major'].apply(major)
-    predictData['experience'] = df['exp'].apply(experience)
+    predictData['experience'] = df['experience'].apply(experience)
     predictData['company_size'] = df['company_s'].apply(company_s)
     predictData['company_type'] = df['company_t'].apply(company_t)
     predictData['last_new_job'] = df['last_job'].apply(last_job)
