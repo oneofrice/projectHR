@@ -1,4 +1,3 @@
-
 $(document).ready(function () {
     $('#submit_btn').click(function (e) {
         e.preventDefault();
@@ -17,8 +16,9 @@ $(document).ready(function () {
         $.ajax({
             url: '../logic/request.php' + url_params,
             type:"GET",
+            dataType: "json",
             success: function (data) {   /* функция которая будет выполнена после успешного запроса.  */
-                console.log(data);/* В переменной data содержится ответ от index.php. */
+                window.location.href = '../result.php?result='+data.result;
             },
             error: function (data) {
                 alert("error");

@@ -20,22 +20,22 @@ header('Access-Control-Allow-Origin: *');
 			<div class="row gx-5">
 				<div class="col" style="margin-left: 150px;">
 					<div class="ms-5 me-5">
-						<a class="nav-link navbar_text" style="color: #09418B"  href="#">HOME</a>
+						<a class="nav-link navbar_text" style="color: #09418B"  href="/">HOME</a>
 					</div>
 				</div>
 				<div class="col">
 					<div class="ms-5 me-5">
-						<a class="nav-link navbar_text" style="color: #09418B" href="#">RESEARCH</a>
+						<a class="nav-link navbar_text" style="color: #09418B" href="/research.php">RESEARCH</a>
 					</div>
 				</div>
 				<div class="col">
 					<div class="ms-5 me-5">
-						<a class="nav-link navbar_text" style="color: #09418B" href="#">ABOUT</a>
+						<a class="nav-link navbar_text" style="color: #09418B" href="#">DATASET</a>
 					</div>
 				</div>
 				<div class="col ">
 					<div class="ms-5 me-5">
-						<a class="nav-link navbar_text" style="color: #09418B" href="#">CONTACT</a>
+						<a class="nav-link navbar_text" style="color: #09418B" href="/contact.php">CONTACTS</a>
 					</div>
 				</div>
 			</div>
