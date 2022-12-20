@@ -1,7 +1,6 @@
 <?php
-//include "logic.php";
 
-//?>
+?>
 <!DOCTYPE html>
 <html lang="ru">
 <!-- добавляем русский язык -->
