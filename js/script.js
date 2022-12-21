@@ -18,7 +18,7 @@ $(document).ready(function () {
             type:"GET",
             dataType: "json",
             success: function (data) {   /* функция которая будет выполнена после успешного запроса.  */
-                window.location.href = '../result.php?result='+data.result;
+                window.location.href = '../projectHR/result.php?result='+data.result;
             },
             error: function (data) {
                 alert("error");

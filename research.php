@@ -124,7 +124,7 @@ $training_hours = getTrainingHours();
 						<label class="form-check-label" for="rel_experience">No relevent experience</label>
 					</div>
 					<div>
-						<button class="but send-button"  type="button" id="submit_btn" name="submit_btn" onclick="location.href='result.php';">Send
+						<button class="but send-button"  type="button" id="submit_btn" name="submit_btn">Send
 							<img src="images/Vector.png"></button>
 					</div>
 				</div>
