@@ -75,4 +75,11 @@ function getLastJob(){
     ];
     return $last_jobArray;
 }
+function getCityDevelopmentIndex(){
+
+}
+
+function getTrainingHours(){
+
+}
 ?>

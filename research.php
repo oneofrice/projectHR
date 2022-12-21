@@ -9,6 +9,8 @@ $experience = getExperience();
 $company_t = getCompanyT();
 $company_s = getCompanyS();
 $last_job = getLastJob();
+$city_index = getCityDevelopmentIndex();
+$training_hours = getTrainingHours();
 ?>
 <div class="container-fluid header-space">
 	<div class="row">
@@ -86,6 +88,23 @@ $last_job = getLastJob();
 							<option value="<?php echo $l_job; ?>"><?php echo $l_job; ?></option>
 						<?php endforeach; ?>
 					</select>
+                    <div class="label label-color">Select a city development index from the list</div>
+                    <i class="list"></i>
+                    <select name="last_job" class="val select select-border" id="city_index">
+                        <option disabled selected>Select from list</option>
+                        <?php foreach($city_index as $cid) : ?>
+                            <option value="<?php echo $cid; ?>"><?php echo $cid; ?></option>
+                        <?php endforeach; ?>
+                    </select>
+                    <div class="label label-color">Select a training hours from the list</div>
+                    <i class="list"></i>
+                    <select name="last_job" class="val select select-border" id="city_index">
+                        <option disabled selected>Select from list</option>
+                        <?php foreach($training_hours as $th) : ?>
+                            <option value="<?php echo $th; ?>"><?php echo $th; ?></option>
+                        <?php endforeach; ?>
+                    </select>
+
 					<div class="label label-color">Select a gender</div>
 					<div class="check radio-margin" >
 						<input name="checkbox" id="gender" class="form-check-input" type="radio" value="Female">
