@@ -161,9 +161,10 @@ body {
 .color-contact{
     font-family: 'Barlow';
     font-style: italic;
-    font-weight: 500;
-    font-size: 36px;
-    line-height: 43px;
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 36px;
+
     margin-left: 107px;
     margin-right: 35px;
     margin-top: 35px !important;
