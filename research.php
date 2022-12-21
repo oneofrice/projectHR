@@ -87,7 +87,7 @@ $last_job = getLastJob();
 						<?php endforeach; ?>
 					</select>
 					<div class="label label-color">Select a gender</div>
-					<div class="check" style="margin-left: 150px;">
+					<div class="check radio-margin" >
 						<input name="checkbox" id="gender" class="form-check-input" type="radio" value="Female">
 						<label class="form-check-label" for="gender">Female</label>
 						<input name="checkbox" id="gender" class="form-check-input" type="radio" value="Male">
@@ -96,16 +96,16 @@ $last_job = getLastJob();
 						<label class="form-check-label" for="gender">Other</label>
 					</div>
 					<div class="label label-color">Select a rel_experience</div>
-					<div class="form-check" style="margin-left: 150px;">
-						<input name="checkbox" id="rel_experience" class="form-check-input" type="radio" value="Has relevent experience">
+					<div class="form-check radio-margin">
+						<input name="checkbox1" id="rel_experience" class="form-check-input" type="radio" value="Has relevent experience">
 						<label class="form-check-label" for="rel_experience">Has relevent experience</label>
 					</div>
-					<div class="form-check" style="margin-left: 150px;">
-						<input name="checkbox" id="rel_experience" class="form-check-input" type="radio" value="No relevent experience">
+					<div class="form-check radio-margin" >
+						<input name="checkbox1" id="rel_experience" class="form-check-input" type="radio" value="No relevent experience">
 						<label class="form-check-label" for="rel_experience">No relevent experience</label>
 					</div>
 					<div>
-						<button class="but btn button-send" style="margin-left: 300px;" type="button" id="submit_btn" name="submit_btn">Send
+						<button class="but send-button"  type="button" id="submit_btn" name="submit_btn" onclick="location.href='result.php';">Send
 							<img src="images/Vector.png"></button>
 					</div>
 				</div>

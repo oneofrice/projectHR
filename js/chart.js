@@ -6,11 +6,15 @@ $(document).ready(function() {
 	result *= 100;
 	let other = 100 - result;
 	ctx.height = 200;
+
+	let canvas_c = document.getElementById('change');
+	canvas_c.innerHTML = result;
+	let canvas_nc = document.getElementById('not_change');
+	canvas_nc.innerHTML = other;
+
 	let myChart = new Chart(ctx, {
 		type: 'pie',
 		data: {
-			labels: ['The probability that tou will not change job',
-				'The probability that you will change job'],
 			datasets: [{
 				data: [result, other],
 				backgroundColor: [ '#8DBFFF', '#2E5C9A'],
@@ -21,7 +25,7 @@ $(document).ready(function() {
 		options: {
 			title: {
 				display: true,
-				text: 'Recommended Daily Diet',
+				text: 'Result diagram',
 				position: 'top',
 				fontSize: 16,
 				fontColor: '#111',
@@ -32,7 +36,7 @@ $(document).ready(function() {
 				position: 'bottom',
 				labels: {
 					boxWidth: 20,
-					fontColor: '#111',
+					fontColor: '#2E5C9A',
 					padding: 15
 				}
 			},

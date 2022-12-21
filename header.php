@@ -10,7 +10,8 @@ header('Access-Control-Allow-Origin: *');
     <link rel="stylesheet" href="css/style.css">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
+    <script src="js/script.js"></script>
+    <script src='js/chart.js'></script>
     <title>project HR</title>
 </head>
 <body>
@@ -20,22 +21,22 @@ header('Access-Control-Allow-Origin: *');
 			<div class="row gx-5">
 				<div class="col" style="margin-left: 150px;">
 					<div class="ms-5 me-5">
-						<a class="nav-link navbar_text" style="color: #09418B"  href="/">HOME</a>
+						<a class="nav-link navbar_text" href="index.php">HOME</a>
 					</div>
 				</div>
 				<div class="col">
 					<div class="ms-5 me-5">
-						<a class="nav-link navbar_text" style="color: #09418B" href="/research.php">RESEARCH</a>
+						<a class="nav-link navbar_text" href="research.php">RESEARCH</a>
 					</div>
 				</div>
 				<div class="col">
 					<div class="ms-5 me-5">
-						<a class="nav-link navbar_text" style="color: #09418B" href="#">DATASET</a>
+						<a class="nav-link navbar_text" href="#">DATASET</a>
 					</div>
 				</div>
 				<div class="col ">
 					<div class="ms-5 me-5">
-						<a class="nav-link navbar_text" style="color: #09418B" href="/contact.php">CONTACTS</a>
+						<a class="nav-link navbar_text" href="contact.php">CONTACTS</a>
 					</div>
 				</div>
 			</div>
