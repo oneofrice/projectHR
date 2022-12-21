@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,900;1,400;1,900&display=swap');
+
+body {
+    padding-bottom: 20px;
+}
+
+.items-color{
+    color: #09418B;
+    background-color: white;
+}
+
+.left-text{
+    margin-left: 132px;
+}
+
+.navbar-color{
+    color: #09418B;
+}
+
+.research-button{
+    width: 265px;
+    height: 80.52px;
+    left: 146px;
+    top: 687px;
+
+    background: #2E5C9A;
+    border-radius: 30.7459px;
+    color: #FFFFFF;
+    font-family: 'Barlow';
+    font-style: italic;
+    font-weight: 500;
+    font-size: 24.7244px;
+    line-height: 30px;
+    text-align: center;
+    border-color: #FFFFFF;
+}
+
+.navbar_text{
+    font-family: 'Barlow';
+    font-style: italic;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #09418B!important;
+}
+
+.title-hr{
+    width: 648px;
+    height: 231.98px;
+    left: 132px;
+    top: 276px;
+
+    font-family: 'Barlow';
+    font-style: italic;
+    font-weight: 900;
+    font-size: 105.048px;
+    line-height: 126px;
+
+    color: #2E5C9A;
+    margin-right: 20px;
+}
+
+.text-hr{
+    width: 615.19px;
+    height: 196px;
+    left: 146px;
+    top: 445px;
+
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36.2543px;
+    line-height: 44px;
+
+    color: #2E5C99;
+}
+
+.img-hr{
+    width: 900px;
+    height: 590px;
+    left: 800px;
+    top: 245px;
+    margin-left: 130px!important;
+}
+
+.img-dev{
+    width: 750px;
+    height: 490px;
+    left: 60px;
+    top: 370px;
+    /*margin-left: 0px;*/
+}
+
+.header-space{
+    margin-top: 176px;
+}
+
+.right-text{
+    margin-left: 120px;
+}
+
+.radio-margin{
+    margin-left: 200px;
+    margin-bottom: 30px;
+}
+
+.select-border{
+    margin-left: 200px!important;
+    padding: 0px;
+
+    width: 500px;
+    height: 55.09px;
+
+    background: #CBE5FF;
+    border-radius: 6.88676px;
+    margin-bottom: 25px;
+    color: #09418B
+}
+
+.label-color{
+    margin-left: 200px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #878787;
+    margin-bottom: 12px;
+}
+
+.select-text{
+    padding: 24.5897px;
+    gap: 24.59px;
+    background: #FFFFFF;
+    border-radius: 5.12284px;
+}
+
+
+.send-button{
+    margin-top: 30px;
+    margin-left: 200px;
+    padding: 8.19655px 24.5896px;
+    gap: 9.22px;
+
+    width: 126px;
+    height: 45px;
+
+    background: #A5D2FF;
+    border-radius: 5.12284px;
+    border-color: #FFFFFF;
+}
+
+.text-dev{
+    font-family: 'Barlow';
+    font-style: italic;
+    font-weight: 500;
+    font-size: 36.2543px;
+    line-height: 44px;
+
+    color: #2E5C99;
+}
+
+.color-contact{
+    font-family: 'Barlow';
+    font-style: italic;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 43px;
+    margin-left: 107px;
+    margin-right: 35px;
+    margin-top: 35px !important;
+    color: #2E5C9A;
+}
+
+.contact-sign{
+    font-family: 'Barlow';
+    font-style: italic;
+    font-weight: 500;
+    font-size: 90px;
+    line-height: 108px;
+
+    color: #2E5C9A;
+}
+
+.contact-space{
+    margin-top: 100px !important;
+}
+
+.button-enter{
+    margin-left: 155px!important;
+    margin-top: 100px;
+    width: 265px;
+    height: 80.52px;
+    left: 797px;
+    top: 870px;
+
+    background: #CBE5FF;
+    border-radius: 30.7459px;
+    border: #FFFFFF;
+    font-family: 'Barlow';
+    font-style: italic;
+    font-weight: 500;
+    font-size: 24.7244px;
+    line-height: 30px;
+    text-align: center;
+
+    color: #09418B;
+}
+
+.chart-style{
+    width: 335.74px;
+    height: 347.95px;
+}
+
+.left-result-text{
+    margin-left: 50px!important;
+    margin-top: 100px!important;
+}
+
+.right-result-text{
+    margin-left: 150px;
+    margin-top: 100px!important;
+}
+
+.percent-style{
+    font-family: 'Barlow';
+    font-style: italic;
+    font-weight: 500;
+    font-size: 128px;
+    line-height: 154px;
+
+    color: #2E5C99;
+}
+
+.result-text-style{
+    font-family: 'Barlow';
+    font-style: italic;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 43px;
+
+    color: #2E5C99;
+}
+
