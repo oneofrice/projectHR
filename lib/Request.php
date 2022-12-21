@@ -2,8 +2,6 @@
 
 class Request
 {
-	protected string $domain = 'https://11a4-85-174-38-221.eu.ngrok.io';
-
 	public function sendRequest($url): bool|string
 	{
 		if ($curl = curl_init()) {

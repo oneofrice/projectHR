@@ -239,7 +239,7 @@ def predictResult(data):
     
     predictData['enrollee_id'] = 0
     predictData['city'] = df['city'].apply(city)
-    predictData['city_development_index'] = 0.45
+    predictData['city_development_index'] = df['city_development_index']
     predictData['gender'] = df['gender'].apply(gender_to_numeric)
     predictData['relevent_experience'] = df['rel_experience'].apply(rel_experience)
     predictData['enrolled_university'] = df['enrollment'].apply(enrollment)
@@ -249,7 +249,7 @@ def predictResult(data):
     predictData['company_size'] = df['company_s'].apply(company_s)
     predictData['company_type'] = df['company_t'].apply(company_t)
     predictData['last_new_job'] = df['last_job'].apply(last_job)
-    predictData['training_hours'] = 100
+    predictData['training_hours'] = df['training_hours']
    
     
     result = model.predict(predictData)

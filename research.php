@@ -9,8 +9,6 @@ $experience = getExperience();
 $company_t = getCompanyT();
 $company_s = getCompanyS();
 $last_job = getLastJob();
-$city_index = getCityDevelopmentIndex();
-$training_hours = getTrainingHours();
 ?>
 <div class="container-fluid header-space">
 	<div class="row">
@@ -25,7 +23,6 @@ $training_hours = getTrainingHours();
 			<form id="dataForm" method="post" action="research.php" class="ajax">
 				<div class="block-right">
 					<div class="label label-color">Select a city from the list</div>
-					<i class="list"></i>
 					<select name="city" id="city" class="val select select-border">
 						<option disabled selected><img src="images/list.png">Select from list</option>
 						<?php foreach($city as $City) : ?>
@@ -33,7 +30,6 @@ $training_hours = getTrainingHours();
 						<?php endforeach; ?>
 					</select>
 					<div class="label label-color">Select a enrollment from the list</div>
-					<i class="list"></i>
 					<select name="enrollment" id="enrollment" class="val select select-border">
 						<option disabled selected>Select from list</option>
 						<?php foreach($enrollment as $Enrlmnt) : ?>
@@ -41,7 +37,6 @@ $training_hours = getTrainingHours();
 						<?php endforeach; ?>
 					</select>
 					<div class="label label-color">Select a edu_level from the list</div>
-					<i class="list"></i>
 					<select name="edu_level" id="edu_level" class="val select select-border">
 						<option disabled selected>Select from list</option>
 						<?php foreach($edu_level as $edu_lvl) : ?>
@@ -49,7 +44,6 @@ $training_hours = getTrainingHours();
 						<?php endforeach; ?>
 					</select>
 					<div class="label label-color">Select a major from the list</div>
-					<i class="list"></i>
 					<select name="major" id="major" class="val select select-border">
 						<option disabled selected>Select from list</option>
 						<?php foreach($major as $mjr) : ?>
@@ -57,7 +51,6 @@ $training_hours = getTrainingHours();
 						<?php endforeach; ?>
 					</select>
 					<div class="label label-color">Select a experience from the list</div>
-					<i class="list"></i>
 					<select name="experience" id="experience" class="val select select-border">
 						<option disabled selected>Select from list</option>
 						<?php foreach($experience as $exp) : ?>
@@ -65,7 +58,6 @@ $training_hours = getTrainingHours();
 						<?php endforeach; ?>
 					</select>
 					<div class="label label-color">Select a company_t from the list</div>
-					<i class="list"></i>
 					<select name="company_t" id="company_t" class="val select select-border">
 						<option disabled selected>Select from list</option>
 						<?php foreach($company_t as $c_t) : ?>
@@ -73,7 +65,6 @@ $training_hours = getTrainingHours();
 						<?php endforeach; ?>
 					</select>
 					<div class="label label-color">Select a company_s from the list</div>
-					<i class="list"></i>
 					<select name="company_s" id="company_s" class="val select select-border">
 						<option disabled selected>Select from list</option>
 						<?php foreach($company_s as $c_s) : ?>
@@ -81,30 +72,16 @@ $training_hours = getTrainingHours();
 						<?php endforeach; ?>
 					</select>
 					<div class="label label-color">Select a last_job from the list</div>
-					<i class="list"></i>
 					<select name="last_job" class="val select select-border" id="last_job">
 						<option disabled selected>Select from list</option>
 						<?php foreach($last_job as $l_job) : ?>
 							<option value="<?php echo $l_job; ?>"><?php echo $l_job; ?></option>
 						<?php endforeach; ?>
 					</select>
-                    <div class="label label-color">Select a city development index from the list</div>
-                    <i class="list"></i>
-                    <select name="last_job" class="val select select-border" id="city_index">
-                        <option disabled selected>Select from list</option>
-                        <?php foreach($city_index as $cid) : ?>
-                            <option value="<?php echo $cid; ?>"><?php echo $cid; ?></option>
-                        <?php endforeach; ?>
-                    </select>
-                    <div class="label label-color">Select a training hours from the list</div>
-                    <i class="list"></i>
-                    <select name="last_job" class="val select select-border" id="city_index">
-                        <option disabled selected>Select from list</option>
-                        <?php foreach($training_hours as $th) : ?>
-                            <option value="<?php echo $th; ?>"><?php echo $th; ?></option>
-                        <?php endforeach; ?>
-                    </select>
-
+                    <div class="label label-color">Enter the development index of city</div>
+					<input class="val select select-border" type="text" placeholder=" development index" id="city_index" required>
+                    <div class="label label-color">Input a training hours</div>
+					<input class="val select select-border" type="text" placeholder=" training hours" id="training_hours" required>
 					<div class="label label-color">Select a gender</div>
 					<div class="check radio-margin" >
 						<input name="checkbox" id="gender" class="form-check-input" type="radio" value="Female">
